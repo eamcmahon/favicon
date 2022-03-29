@@ -1,0 +1,31 @@
+
+.rotate{
+    fill: rgba(197, 226, 199, 100);
+    animation: rotate 3s;
+    transform-origin: -.6in;
+    transform-box: fill-box;
+    animation-play-state: paused;
+}
+
+#initals{
+    fill: rgba(197, 226, 199, 100);
+}
+
+@keyframes rotate{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+svg{
+    transform: scale(90%);
+    text-align: center;
+}
+
+svg:hover .rotate{
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+}
